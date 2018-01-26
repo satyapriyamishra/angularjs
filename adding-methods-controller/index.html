@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Sharing data between controllers</title>
+    <title>Adding methods to controllers</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -17,8 +17,8 @@
         <div class="form-group col-md-4 col-md-offset-4">
             <label for="Type here">User Input </label>
             <input type="text" class="form-control" ng-model="data.message" placeholder="Type here something"><br/>
-            <h2 >{{data.message}} </h2>
-        </div>        
+            <h2>{{reverseMessage()}} </h2>
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
