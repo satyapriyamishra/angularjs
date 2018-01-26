@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>SATYAPRIYA MISHRA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .row {
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body ng-app="app" ng-controller="myctrl1">
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-4">
+            <h4>Converts a string to uppercase</h4>
+            <h6>{{firstname| uppercase}}</h6>
+        </div>
+        <div class="col-md-6 col-md-offset-4">
+            <h4>Converts a string to uppercase</h4>
+            <h6>{{firstname| lowercase}}</h6>
+        </div>
+        <div class="col-md-6 col-md-offset-4">
+            <h4>Currency Filter</h4>
+            <h6>{{price| currency}}</h6>
+        </div>
+        <div class="col-md-6 col-md-offset-4">
+            <h4>Filter filter to display only selected entries</h4>
+            <ul>
+                <li ng-repeat="x in name | filter : 'i'">
+                    {{ x }}
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
