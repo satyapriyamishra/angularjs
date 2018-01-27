@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>SATYAPRIYA MISHRA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .row {
+            margin-top: 10%;
+        }
+    </style>
+</head>
+
+<body ng-app="copyExample">
+    <div ng-controller="ExampleController">
+        <form novalidate class="simple-form">
+            <label>Name: <input type="text" ng-model="user.name" /></label><br />
+            <label>Age:  <input type="number" ng-model="user.age" /></label><br /> Gender: <label><input type="radio" ng-model="user.gender" value="male" />male</label>
+            <label><input type="radio" ng-model="user.gender" value="female" />female</label><br />
+            <button ng-click="reset()">RESET</button>
+            <button ng-click="update(user)">SAVE</button>
+        </form>
+        <pre>form = {{user | json}}</pre>
+        <pre>leader = {{leader | json}}</pre>
+    </div>
+    <div ng-controller="ExampleController">
+        <form novalidate class="simple-form">
+            <label>Name: <input type="text" ng-model="user.name" /></label><br />
+            <label>Age:  <input type="number" ng-model="user.age" /></label><br /> Gender: <label><input type="radio" ng-model="user.gender" value="male" />male</label>
+            <label><input type="radio" ng-model="user.gender" value="female" />female</label><br />
+            <button ng-click="reset()">RESET</button>
+            <button ng-click="update(user)">SAVE</button>
+        </form>
+        <pre>form = {{user | json}}</pre>
+        <pre>leader = {{leader | json}}</pre>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
