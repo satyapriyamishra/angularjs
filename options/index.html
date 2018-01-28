@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>SATYAPRIYA MISHRA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        ul {
+            margin-top: 4%;
+            margin-bottom: 10px;
+            margin-left: 35%;
+        }
+        ul li {
+            list-style-type: none;
+            font-weight:bold;
+        }
+        body {
+            margin-left:10%;
+            margin-top:10%;
+        } 
+
+    </style>
+</head>
+
+<body ng-app="app" ng-controller="myCtrl">
+    <p>Select a car:</p>
+
+<select ng-model="selectedCar" ng-options="x for (x, y) in cars">
+</select>
+
+<h1>You selected: {{selectedCar.brand}}</h1>
+<h2>Model: {{selectedCar.model}}</h2>
+<h3>Color: {{selectedCar.color}}</h3>
+
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
