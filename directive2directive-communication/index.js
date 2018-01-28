@@ -1,11 +1,5 @@
 var app = angular.module('app', []);
 
-
-// app.controller ('myctrl1', function ($scope) {
-//     // $scope.trigger = function () {
-//     //     alert("Alert from controller !");
-//     // }
-// })
 app.directive('superman', function () {
     return {
         restrict : 'E',
